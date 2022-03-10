@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using ASPMVC_Tsk01.Models;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
-using ASPMVC_Tsk01.Models;
 
 namespace ASPMVC_Tsk01.Controllers
 {
