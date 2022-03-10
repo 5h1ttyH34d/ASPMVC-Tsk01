@@ -1,0 +1,60 @@
+﻿*{
+    margin:0;
+    padding:0;
+    background-color:aquamarine;
+}
+
+.header {
+    background-color: crimson;
+    border-bottom: 3px solid blue;
+    padding: 5px 0px 5px 0px;
+}
+
+#return-to-main-page {
+    border-radius:5px;
+    padding:0px 5px 0px 5px;
+    font-size: 35px;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none;
+    color:lightgreen;
+    border: 2px solid black;
+    background-color:darkslategray;
+}
+#return-to-main-page:hover{
+    color:darkgreen;
+    border-color:aquamarine;
+    background-color:aqua;
+}
+
+.main-page{
+    text-decoration:none;
+    font-size:20px;
+    color:red;
+    margin-top:55px;
+}
+
+.main-page-link{
+    list-style-type:none;
+    text-decoration:none;
+    margin-left:auto;
+    margin-right:auto;
+    width:5em;
+}
+
+.links-to-entity {
+    background-color: darkslateblue;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border: 3px solid black;
+    padding: 0px 5px 0px 5px;
+    margin: 0px 5px 0px 5px;
+}
+
+.links-to-entity:hover{
+    background-color:black;
+    color:wheat;
+    border:1px solid darkblue;
+}

@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>@ViewBag.Title</title>
+    <link type="text/css" rel="stylesheet" href="~/Content/styles.css"/>
+</head>
+<body>
+    <div class="header">
+        @Html.ActionLink("Main Page", "Index", "Home", new { area = "" }, new { @id = "return-to-main-page" })
+        @Html.ActionLink("Buldings", "Index", "Buildings", new { area = "" }, new { @class = "links-to-entity" })
+        @Html.ActionLink("Workers", "Index", "Workers", new { area = "" }, new { @class = "links-to-entity" })
+    </div>
+    <div class="content-toshow">
+        @RenderBody()
+    </div>
+</body>
+</html>
+
+

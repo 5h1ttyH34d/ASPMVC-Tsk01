@@ -1,0 +1,78 @@
+﻿@model ASPMVC_Tsk01.Models.Workers
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Workers</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <strong>
+            @Html.DisplayNameFor(model => model.FirstName)
+            </strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            <strong>
+                @Html.DisplayNameFor(model => model.LastName)
+            </strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            <strong>
+                @Html.DisplayNameFor(model => model.PatrName)
+            </strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatrName)
+        </dd>
+
+        <dt>
+            <strong>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+
+        <dt>
+            <strong>
+                @Html.DisplayNameFor(model => model.Speciality)
+            </strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Speciality)
+        </dd>
+
+        <dt>
+            <strong>
+                @Html.DisplayNameFor(model => model.Buildings.Adress)
+            </strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Buildings.Adress)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

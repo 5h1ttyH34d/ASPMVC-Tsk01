@@ -1,0 +1,92 @@
+﻿@model ASPMVC_Tsk01.Models.Buildings
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Buildings</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            <strong>
+            @Html.DisplayNameFor(model => model.Adress)
+            </strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adress)
+        </dd>
+
+        <dt>
+            <strong>
+            @Html.DisplayNameFor(model => model.Capacicty)
+            </strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Capacicty)
+        </dd>
+
+        <dt>
+            <strong>
+            @Html.DisplayNameFor(model => model.BuildingType)
+            </strong>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BuildingType)
+        </dd>
+
+    </dl>
+    <table cellpadding="5px" cellspacing="20px">
+        <thead>
+            <tr>
+                <th>
+                    First Name
+                </th>
+                <th>
+                    Last Name
+                </th>
+                <th>
+                    Patr Name
+                </th>
+                <th>
+                    Phone Number
+                </th>
+                <th>
+                    Speciality
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var i in Model.Workers)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(w => i.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(w => i.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(w => i.PatrName)
+                </td>
+                <td>
+                    @Html.DisplayFor(w => i.PhoneNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(w => i.Speciality)
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Add Workers","Create","Workers")
+</p>
