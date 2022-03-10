@@ -9,25 +9,25 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table" cellpadding="5px" cellspacing="15px">
+<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.FirstName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.LastName)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayNameFor(model => model.LastName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PatrName)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayNameFor(model => model.PatrName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PhoneNumber)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayNameFor(model => model.PhoneNumber)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Speciality)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayNameFor(model => model.Speciality)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Buildings.Adress)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayNameFor(model => model.Buildings.Adress)
         </th>
         <th></th>
     </tr>
@@ -38,24 +38,26 @@
             @Html.DisplayFor(modelItem => item.FirstName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.LastName)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.LastName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.PatrName)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.PatrName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.PhoneNumber)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.PhoneNumber)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Speciality)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.Speciality)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Buildings.Adress)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.Buildings.Adress)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
         </td>
     </tr>
 }

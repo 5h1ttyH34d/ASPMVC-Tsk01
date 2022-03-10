@@ -9,7 +9,7 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<table class="table" cellpadding="5" cellspacing="20">
     <tr>
         <th>
             <strong>
@@ -18,12 +18,12 @@
         </th>
         <th>
             <strong>
-            &nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayNameFor(model => model.Capacicty)
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayNameFor(model => model.Capacicty)
             </strong>
         </th>
         <th>
             <strong>
-            &nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayNameFor(model => model.BuildingType)
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayNameFor(model => model.BuildingType)
             </strong>
         </th>
         <th></th>
@@ -35,10 +35,10 @@
             @Html.DisplayFor(modelItem => item.Adress)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Capacicty)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.Capacicty)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.BuildingType)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayFor(modelItem => item.BuildingType)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

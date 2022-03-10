@@ -1,7 +1,7 @@
 ﻿@model ASPMVC_Tsk01.Models.Buildings
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = $"Building details {Model.Id}";
 }
 
 <h2>Details</h2>
@@ -11,53 +11,35 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            <strong>
-            @Html.DisplayNameFor(model => model.Adress)
-            </strong>
+            @Html.DisplayNameFor(model => model.Adress): @Html.DisplayFor(model => model.Adress)
         </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Adress)
-        </dd>
 
         <dt>
-            <strong>
-            @Html.DisplayNameFor(model => model.Capacicty)
-            </strong>
+                @Html.DisplayNameFor(model => model.Capacicty): @Html.DisplayFor(model => model.Capacicty)
         </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Capacicty)
-        </dd>
 
         <dt>
-            <strong>
-            @Html.DisplayNameFor(model => model.BuildingType)
-            </strong>
+                @Html.DisplayNameFor(model => model.BuildingType): @Html.DisplayFor(model => model.BuildingType)
         </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BuildingType)
-        </dd>
 
     </dl>
-    <table cellpadding="5px" cellspacing="20px">
+    <table>
         <thead>
             <tr>
                 <th>
                     First Name
                 </th>
                 <th>
-                    Last Name
+                    &nbsp;&nbsp;&nbsp;&nbsp;Last Name
                 </th>
                 <th>
-                    Patr Name
+                    &nbsp;&nbsp;&nbsp;&nbsp;Patr Name
                 </th>
                 <th>
-                    Phone Number
+                    &nbsp;&nbsp;&nbsp;&nbsp;Phone Number
                 </th>
                 <th>
-                    Speciality
+                    &nbsp;&nbsp;&nbsp;&nbsp;Speciality
                 </th>
             </tr>
         </thead>
@@ -69,16 +51,16 @@
                     @Html.DisplayFor(w => i.FirstName)
                 </td>
                 <td>
-                    @Html.DisplayFor(w => i.LastName)
+                    &nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayFor(w => i.LastName)
                 </td>
                 <td>
-                    @Html.DisplayFor(w => i.PatrName)
+                    &nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayFor(w => i.PatrName)
                 </td>
                 <td>
-                    @Html.DisplayFor(w => i.PhoneNumber)
+                    &nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayFor(w => i.PhoneNumber)
                 </td>
                 <td>
-                    @Html.DisplayFor(w => i.Speciality)
+                    &nbsp;&nbsp;&nbsp;&nbsp;@Html.DisplayFor(w => i.Speciality)
                 </td>
             </tr>
             }

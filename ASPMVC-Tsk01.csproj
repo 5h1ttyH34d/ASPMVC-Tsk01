@@ -113,7 +113,24 @@
     <Content Include="App_Data\SBD_MDK_BD.sql" />
     <Content Include="App_Data\SomeDB.mdf" />
     <Content Include="App_Data\SomeDB_log.ldf" />
-    <Content Include="Content\styles.css" />
+    <Content Include="Content\css\main.css" />
+    <Content Include="Content\css\main.min.css">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
+    <Content Include="Content\js\scripts.js" />
+    <Content Include="Content\js\scripts.min.js">
+      <DependentUpon>scripts.js</DependentUpon>
+    </Content>
+    <Content Include="Content\Sass\images\bg01.jpg" />
+    <Content Include="Content\Sass\images\bg02.jpg" />
+    <Content Include="Content\Sass\images\bg03.jpg" />
+    <Content Include="Content\Sass\images\bg04.jpg" />
+    <Content Include="Content\Sass\images\bg04.png" />
+    <Content Include="Content\Sass\images\button-big-active.svg" />
+    <Content Include="Content\Sass\images\button-big-hover.svg" />
+    <Content Include="Content\Sass\images\button-big.svg" />
+    <Content Include="Content\Sass\images\icon-checkmark.png" />
+    <Content Include="Content\Sass\images\mobileUI-site-nav-opener-bg.svg" />
     <Content Include="Global.asax" />
     <Content Include="Models\DataModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -168,6 +185,11 @@
     <Content Include="Models\DataModel.edmx.diagram">
       <DependentUpon>DataModel.edmx</DependentUpon>
     </Content>
+    <None Include="bundleconfig.json" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -182,6 +204,11 @@
     <Content Include="Views\Workers\Details.cshtml" />
     <Content Include="Views\Workers\Edit.cshtml" />
     <Content Include="Views\Workers\Index.cshtml" />
+    <Content Include="Views\Shared\CssPartial.cshtml" />
+    <Content Include="Views\Shared\MetatagsPartial.cshtml" />
+    <Content Include="Views\Shared\ScriptsPartial.cshtml" />
+    <Content Include="Views\Shared\HeaderPartial.cshtml" />
+    <Content Include="Views\Shared\FooterPartial.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

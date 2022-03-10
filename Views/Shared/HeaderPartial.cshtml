@@ -1,0 +1,20 @@
+﻿<section id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <!-- Logo -->
+                <h1>
+                    @Html.ActionLink("Someone site of someone conpany", "Index", "Home", new { area = "" }, null)
+                </h1>
+
+                <!-- Nav -->
+                <nav id="nav">
+                    @Html.ActionLink("Start Page", "Index", "Home", new { area = "" }, null)
+                    @Html.ActionLink("Buldings", "Index", "Buildings", new { area = "" }, null)
+                    @Html.ActionLink("Workers", "Index", "Workers", new { area = "" }, null)
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>

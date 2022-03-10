@@ -1,7 +1,7 @@
 ﻿@model ASPMVC_Tsk01.Models.Workers
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = $"Worker details {Model.Id}";
 }
 
 <h2>Details</h2>
@@ -11,64 +11,28 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            <strong>
-            @Html.DisplayNameFor(model => model.FirstName)
-            </strong>
+            @Html.DisplayNameFor(model => model.FirstName): @Html.DisplayFor(model => model.FirstName)
         </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.FirstName)
-        </dd>
 
         <dt>
-            <strong>
-                @Html.DisplayNameFor(model => model.LastName)
-            </strong>
+            @Html.DisplayNameFor(model => model.LastName): @Html.DisplayFor(model => model.LastName)
         </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.LastName)
-        </dd>
 
         <dt>
-            <strong>
-                @Html.DisplayNameFor(model => model.PatrName)
-            </strong>
+            @Html.DisplayNameFor(model => model.PatrName): @Html.DisplayFor(model => model.PatrName)
         </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PatrName)
-        </dd>
 
         <dt>
-            <strong>
-                @Html.DisplayNameFor(model => model.PhoneNumber)
-            </strong>
+            @Html.DisplayNameFor(model => model.PhoneNumber): @Html.DisplayFor(model => model.PhoneNumber)
         </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.PhoneNumber)
-        </dd>
 
         <dt>
-            <strong>
-                @Html.DisplayNameFor(model => model.Speciality)
-            </strong>
+            @Html.DisplayNameFor(model => model.Speciality): @Html.DisplayFor(model => model.Speciality)
         </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Speciality)
-        </dd>
 
         <dt>
-            <strong>
-                @Html.DisplayNameFor(model => model.Buildings.Adress)
-            </strong>
+            @Html.DisplayNameFor(model => model.Buildings.Adress): @Html.DisplayFor(model => model.Buildings.Adress)
         </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Buildings.Adress)
-        </dd>
 
     </dl>
 </div>

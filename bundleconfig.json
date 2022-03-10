@@ -1,0 +1,12 @@
+[
+  {
+    "outputFileName": "Content/js/scripts.js",
+    "inputFiles": [
+      "Content/js/jquery.min.js",
+      "Content/js/breakpoints.min.js",
+      "Content/js/browser.min.js",
+      "Content/js/main.js",
+      "Content/js/util.js"
+    ]
+  }
+]
